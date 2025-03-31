@@ -85,8 +85,13 @@ namespace Vozni_Park.Services
 
         public async Task RegistrateVehicle(int idVehicle, string dateTo)
         {
-            DateOnly dateToChange = DateOnly.ParseExact(dateTo, "dd/MM/yyyy", CultureInfo.InvariantCulture).AddYears(1);
+            DateTime dateToChange = DateTime.ParseExact(dateTo, "dd.MM.yyyy", CultureInfo.InvariantCulture);
+            dateToChange = dateToChange.AddYears(1);
             string changedDate = dateToChange.ToString("yyyy-MM-dd");
+            /* zamenjeno zbog starijeg racunara ne zna za dateOnly
+            DateOnly dateToChange = DateOnly.ParseExact(dateTo, "dd/MM/yyyy");
+            dateToChange = dateToChange.AddYears(1);
+            string changedDate = dateToChange.ToString("yyyy-MM-dd");*/
             await _vehicleRepository.RegistrateVehicleAsync(idVehicle, changedDate);
         }
         public async Task<List<VehicleTableViewDTO>> GetVehiclesByParameters(int idMine, int idCategory, int idSubcategory, int idOwner, int idState)
