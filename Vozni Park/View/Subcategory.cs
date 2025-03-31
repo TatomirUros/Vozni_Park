@@ -39,7 +39,7 @@ namespace Vozni_Park.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Došlo je do greške");
+                MessageBox.Show($"Došlo je do greške , {ex.Message}");
             }
         }
         private void UpdateComboBoxInVehicle()
@@ -60,7 +60,7 @@ namespace Vozni_Park.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Došlo je do greške");
+                MessageBox.Show($"Došlo je do greške , {ex.Message}");
             }
         }
         private void Subcategory_Load(object sender, EventArgs e)
@@ -86,7 +86,7 @@ namespace Vozni_Park.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Došlo je do greške");
+                MessageBox.Show($"Došlo je do greške , {ex.Message}");
             }
         }
 
@@ -102,7 +102,7 @@ namespace Vozni_Park.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Došlo je do greške");
+                MessageBox.Show($"Došlo je do greške , {ex.Message}");
             }
         }
 
@@ -123,7 +123,7 @@ namespace Vozni_Park.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Došlo je do greške");
+                MessageBox.Show($"Došlo je do greške , {ex.Message}");
             }
         }
 
