@@ -69,7 +69,7 @@ namespace Vozni_Park.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Došlo je do greške , {ex.Message}");
+                MessageBox.Show($"Došlo je do greške, {ex.Message}");
             }
         }
 
@@ -85,7 +85,7 @@ namespace Vozni_Park.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Došlo je do greške , {ex.Message}");
+                MessageBox.Show($"Došlo je do greške, {ex.Message}");
             }
         }
         private void ServiceRequest_Load(object sender, EventArgs e)
@@ -121,7 +121,7 @@ namespace Vozni_Park.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Došlo je do greške , {ex.Message}");
+                MessageBox.Show($"Došlo je do greške, {ex.Message}");
             }
         }
 
@@ -148,7 +148,7 @@ namespace Vozni_Park.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Došlo je do greške , {ex.Message}");
+                MessageBox.Show($"Došlo je do greške, {ex.Message}");
             }
         }
 
@@ -214,7 +214,7 @@ namespace Vozni_Park.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Došlo je do greške , {ex.Message}");
+                MessageBox.Show($"Došlo je do greške, {ex.Message}");
             }
         }
 
@@ -228,7 +228,7 @@ namespace Vozni_Park.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Došlo je do greške , {ex.Message}");
+                MessageBox.Show($"Došlo je do greške, {ex.Message}");
             }
         }
         private async Task AddPictures(int idRequest)
@@ -268,7 +268,7 @@ namespace Vozni_Park.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Došlo je do greške , {ex.Message}");
+                MessageBox.Show($"Došlo je do greške, {ex.Message}");
             }
         }
     }
