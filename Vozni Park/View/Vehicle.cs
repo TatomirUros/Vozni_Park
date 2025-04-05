@@ -78,7 +78,7 @@ namespace Vozni_Park.View
             tbFind.Select();
             rbRegYes.Checked = true;
             BindCombo();
-            dtpDate.CustomFormat = "dd/MM/yyyy";
+            dtpDate.CustomFormat = "dd.MM.yyyy.";
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             lbNumberOfRequests.Visible = false;
             btnAddImage.Enabled = false;
@@ -117,6 +117,7 @@ namespace Vozni_Park.View
                     tbTireDimension.Clear();
                     dtpDate.Value = DateTime.Now;
                     pictureBox1.Image = null;
+                    imageFiles.Clear();
 
                     MessageBox.Show("Uspešno ste uneli novo vozilo");
                 }
@@ -217,6 +218,7 @@ namespace Vozni_Park.View
                     tbTireDimension.Clear();
                     dtpDate.Value = DateTime.Now;
                     pictureBox1.Image = null;
+                    imageFiles.Clear();
 
                     lbNumberOfRequests.Visible = false;
                     btnAddImage.Enabled = false;
@@ -294,6 +296,7 @@ namespace Vozni_Park.View
                     tbTireDimension.Clear();
                     dtpDate.Value = DateTime.Now;
                     pictureBox1.Image = null;
+                    imageFiles.Clear();
 
                     lbNumberOfRequests.Visible = false;
                     btnAddImage.Enabled = false;
@@ -312,8 +315,10 @@ namespace Vozni_Park.View
                     await FindAll();
 
                     if (!checkOtherVehicleForPictures.Equals(tbReg.Text))
+                    {
                         pictureBox1.Image = null;
-
+                        imageFiles.Clear();
+                    }
                     if (!string.IsNullOrWhiteSpace(tbReg.Text))
                     {
                         LoadImage();
@@ -384,10 +389,6 @@ namespace Vozni_Park.View
                 Image originalImage = Image.FromFile(imageFiles[currentImageId]);
                 Image correctedImage = CorrectImageOrientation(originalImage);
                 pictureBox1.Image = correctedImage;
-            }
-            else
-            {
-                MessageBox.Show($"{currentImageId}{imageFiles.Count}");
             }
         }
 
@@ -739,8 +740,10 @@ namespace Vozni_Park.View
                     if (imageFiles.Count > 0)
                         LoadImage();
                     else
+                    {
                         pictureBox1.Image = null; // Nema više slika
-
+                        imageFiles.Clear();
+                    }
                     MessageBox.Show("Slika uspešno obrisana.");
                 }
             }
@@ -882,6 +885,7 @@ namespace Vozni_Park.View
             tbTireDimension.Clear();
             dtpDate.Value = DateTime.Now;
             pictureBox1.Image = null;
+            imageFiles.Clear();
         }
 
         private void Vehicle_FormClosing(object sender, FormClosingEventArgs e)

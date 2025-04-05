@@ -182,7 +182,7 @@ namespace Vozni_Park.Repository
                 DateTime dateTo;
                 if (DateTime.TryParseExact(reader.GetString(6), "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out dateTo))
                 {
-                    string registrationDuration = dateTo.ToString("dd/MM/yyyy");
+                    string registrationDuration = dateTo.ToString("dd.MM.yyyy.", CultureInfo.InvariantCulture);
                     vehicles.Add(new VehicleRegistrationTableViewDTO(int.Parse(reader.GetString(0)), reader.GetString(1), reader.GetString(2), reader.GetString(3), reader.GetString(4), reader.GetString(5), registrationDuration, reader.GetString(7)));
                 }
             }
@@ -269,7 +269,7 @@ namespace Vozni_Park.Repository
 
                 if (DateOnly.TryParseExact(reader.GetString(7), "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out dateTo))
                 {
-                    string registrationDuration = dateTo.ToString("dd/MM/yyyy");
+                    string registrationDuration = dateTo.ToString("dd.MM.yyyy.", CultureInfo.InvariantCulture);
                     if (dateTo < checkDate)
                         registrationDuration = "Nije registoravano";
 

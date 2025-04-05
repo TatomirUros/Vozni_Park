@@ -85,7 +85,7 @@ namespace Vozni_Park.Services
 
         public async Task RegistrateVehicle(int idVehicle, string dateTo)
         {
-            DateTime dateToChange = DateTime.ParseExact(dateTo, "dd.MM.yyyy", CultureInfo.InvariantCulture);
+            DateTime dateToChange = DateTime.ParseExact(dateTo, "dd.MM.yyyy.", CultureInfo.InvariantCulture);
             dateToChange = dateToChange.AddYears(1);
             string changedDate = dateToChange.ToString("yyyy-MM-dd");
             /* zamenjeno zbog starijeg racunara ne zna za dateOnly
