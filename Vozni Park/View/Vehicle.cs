@@ -68,7 +68,7 @@ namespace Vozni_Park.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Došlo je do greške, {ex.Message}");
+                MessageBox.Show($"Došlo je do greške, {ex.Message}", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -124,7 +124,7 @@ namespace Vozni_Park.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Došlo je do greške, {ex.Message}");
+                MessageBox.Show($"Došlo je do greške, {ex.Message}", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -147,7 +147,7 @@ namespace Vozni_Park.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Došlo je do greške, {ex.Message}");
+                MessageBox.Show($"Došlo je do greške, {ex.Message}", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -168,7 +168,7 @@ namespace Vozni_Park.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Došlo je do greške, {ex.Message}");
+                MessageBox.Show($"Došlo je do greške, {ex.Message}", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -235,7 +235,7 @@ namespace Vozni_Park.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Došlo je do greške, {ex.Message}");
+                MessageBox.Show($"Došlo je do greške, {ex.Message}", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -279,7 +279,7 @@ namespace Vozni_Park.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Došlo je do greške, {ex.Message}");
+                MessageBox.Show($"Došlo je do greške, {ex.Message}", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -339,7 +339,7 @@ namespace Vozni_Park.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Došlo je do greške, {ex.Message}");
+                MessageBox.Show($"Došlo je do greške, {ex.Message}", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -441,7 +441,7 @@ namespace Vozni_Park.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Došlo je do greške, {ex.Message}");
+                MessageBox.Show($"Došlo je do greške, {ex.Message}", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
         private async Task<int> FindId()
@@ -462,7 +462,7 @@ namespace Vozni_Park.View
             catch (Exception ex)
             {
                 return -1;
-                MessageBox.Show($"Došlo je do greške, {ex.Message}");
+                MessageBox.Show($"Došlo je do greške, {ex.Message}", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -479,7 +479,7 @@ namespace Vozni_Park.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Došlo je do greške, {ex.Message}");
+                MessageBox.Show($"Došlo je do greške, {ex.Message}", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -496,7 +496,7 @@ namespace Vozni_Park.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Došlo je do greške, {ex.Message}");
+                MessageBox.Show($"Došlo je do greške, {ex.Message}", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -513,7 +513,7 @@ namespace Vozni_Park.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Došlo je do greške, {ex.Message}");
+                MessageBox.Show($"Došlo je do greške, {ex.Message}", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -530,7 +530,7 @@ namespace Vozni_Park.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Došlo je do greške, {ex.Message}");
+                MessageBox.Show($"Došlo je do greške, {ex.Message}", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -548,7 +548,7 @@ namespace Vozni_Park.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Došlo je do greške, {ex.Message}");
+                MessageBox.Show($"Došlo je do greške, {ex.Message}", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -566,7 +566,7 @@ namespace Vozni_Park.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Došlo je do greške, {ex.Message}");
+                MessageBox.Show($"Došlo je do greške, {ex.Message}", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -583,7 +583,7 @@ namespace Vozni_Park.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Došlo je do greške, {ex.Message}");
+                MessageBox.Show($"Došlo je do greške, {ex.Message}", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -603,7 +603,7 @@ namespace Vozni_Park.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Došlo je do greške, {ex.Message}");
+                MessageBox.Show($"Došlo je do greške, {ex.Message}", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -618,7 +618,7 @@ namespace Vozni_Park.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Došlo je do greške, {ex.Message}");
+                MessageBox.Show($"Došlo je do greške, {ex.Message}", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -633,7 +633,7 @@ namespace Vozni_Park.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Došlo je do greške, {ex.Message}");
+                MessageBox.Show($"Došlo je do greške, {ex.Message}", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
         private void btnBefore_Click(object sender, EventArgs e)
@@ -644,7 +644,7 @@ namespace Vozni_Park.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Došlo je do greške, {ex.Message}");
+                MessageBox.Show($"Došlo je do greške, {ex.Message}", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
         private void btnNext_Click(object sender, EventArgs e)
@@ -655,7 +655,7 @@ namespace Vozni_Park.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Došlo je do greške, {ex.Message}");
+                MessageBox.Show($"Došlo je do greške, {ex.Message}", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -697,7 +697,7 @@ namespace Vozni_Park.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Došlo je do greške, {ex.Message}");
+                MessageBox.Show($"Došlo je do greške, {ex.Message}", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -709,7 +709,7 @@ namespace Vozni_Park.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Došlo je do greške, {ex.Message}");
+                MessageBox.Show($"Došlo je do greške, {ex.Message}", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
         private async void btnDeleteImage_Click(object sender, EventArgs e)
@@ -772,7 +772,7 @@ namespace Vozni_Park.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Došlo je do greške, {ex.Message}");
+                MessageBox.Show($"Došlo je do greške, {ex.Message}", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -796,7 +796,7 @@ namespace Vozni_Park.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Došlo je do greške, {ex.Message}");
+                MessageBox.Show($"Došlo je do greške, {ex.Message}", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -820,7 +820,7 @@ namespace Vozni_Park.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Došlo je do greške, {ex.Message}");
+                MessageBox.Show($"Došlo je do greške, {ex.Message}", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -843,7 +843,7 @@ namespace Vozni_Park.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Došlo je do greške, {ex.Message}");
+                MessageBox.Show($"Došlo je do greške, {ex.Message}", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -866,7 +866,7 @@ namespace Vozni_Park.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Došlo je do greške, {ex.Message}");
+                MessageBox.Show($"Došlo je do greške, {ex.Message}", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -929,8 +929,15 @@ namespace Vozni_Park.View
 
         private void btnShowImage_Click(object sender, EventArgs e)
         {
-            string fileToShow = imageFiles[currentImageId];
-            Process.Start(new ProcessStartInfo(fileToShow) { UseShellExecute = true });
+            if (imageFiles.Count > 0)
+            {
+                string fileToShow = imageFiles[currentImageId];
+                Process.Start(new ProcessStartInfo(fileToShow) { UseShellExecute = true });
+            }
+            else
+            {
+                MessageBox.Show("Niste odabrali sliku koju treba prikazati");
+            }
         }
 
         private async void cmbCategory_SelectedIndexChanged(object sender, EventArgs e)
@@ -973,7 +980,7 @@ namespace Vozni_Park.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Došlo je do greške, {ex.Message}");
+                MessageBox.Show($"Došlo je do greške, {ex.Message}", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -991,7 +998,7 @@ namespace Vozni_Park.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Došlo je do greške, {ex.Message}");
+                MessageBox.Show($"Došlo je do greške, {ex.Message}", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -1014,7 +1021,7 @@ namespace Vozni_Park.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Došlo je do greške, {ex.Message}");
+                MessageBox.Show($"Došlo je do greške, {ex.Message}", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -1037,7 +1044,7 @@ namespace Vozni_Park.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Došlo je do greške, {ex.Message}");
+                MessageBox.Show($"Došlo je do greške, {ex.Message}", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
         private async void btnUpdateState_Click(object sender, EventArgs e)
@@ -1054,7 +1061,7 @@ namespace Vozni_Park.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Došlo je do greške, {ex.Message}");
+                MessageBox.Show($"Došlo je do greške, {ex.Message}", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -1068,7 +1075,7 @@ namespace Vozni_Park.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Došlo je do greške, {ex.Message}");
+                MessageBox.Show($"Došlo je do greške, {ex.Message}", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -1086,7 +1093,7 @@ namespace Vozni_Park.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Došlo je do greške, {ex.Message}");
+                MessageBox.Show($"Došlo je do greške, {ex.Message}", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }

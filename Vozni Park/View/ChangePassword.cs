@@ -42,7 +42,7 @@ namespace Vozni_Park.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Došlo je do greške, {ex.Message}");
+                MessageBox.Show($"Došlo je do greške, {ex.Message}", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }
